@@ -1,0 +1,2 @@
+support	(concept1; relation1; concept2)(concept2; relation2; concept3)
+counter	(concept1; relation1; concept2)(concept2; relation2; concept3)(concept1; relation3; concept4)

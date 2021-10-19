@@ -1,0 +1,16 @@
+filelock==3.0.12
+bert_score==0.3.6
+scipy==1.4.1
+spacy==2.1.9
+nltk==3.4.5
+numpy==1.18.5
+rouge_score==0.0.3
+sacrebleu==1.4.3
+transformers==3.4.0
+networkx==2.4
+torch==1.9.0
+pytorch_lightning==0.8.5
+dataclasses==0.8
+fairseq==0.10.2
+GitPython==3.1.24
+scikit_learn==1.0

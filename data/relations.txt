@@ -1,0 +1,28 @@
+antonym of
+synonym of
+at location
+not at location
+capable of
+not capable of
+causes
+not causes
+created by
+not created by
+is a
+is not a
+desires
+not desires
+has subevent
+not has subevent
+part of
+not part of
+has context
+not has context
+has property
+not has property
+made of
+not made of
+receives action
+not receives action
+used for
+not used for

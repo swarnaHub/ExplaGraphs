@@ -1,0 +1,1 @@
+python metrics/eval.py --pred_file data/preds.tsv --gold_file data/dev.tsv --relations_file data/relations.txt --eval_annotated_file data/annotations.tsv

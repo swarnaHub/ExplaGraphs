@@ -1,0 +1,15 @@
+python metrics/run_seca.py \
+  --model_name_or_path ./models/seca-metric \
+  --task_name stance \
+  --do_eval \
+  --save_steps 1000000 \
+  --data_dir ./data/annotations.tsv \
+  --max_seq_length 128 \
+  --per_device_train_batch_size 32 \
+  --learning_rate 1e-5 \
+  --num_train_epochs 3.0 \
+  --output_dir ./models/seca-metric \
+  --cache_dir ./models/ \
+  --logging_steps 500 \
+  --evaluation_strategy="epoch" \
+  --overwrite_cache
