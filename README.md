@@ -42,13 +42,13 @@ Structural Correctness Evaluation requires satisfying all the constraints we def
 Note that our evaluation framework is a pipeline, so the G-BS and GED metrics are computed only on the fraction of samples with annotation ```struct_correct```.
 
 ### Step 2
-Given this intermediate annotation file, we'll now compute the Semantic Correctness Accuracy for Graphs (SeCA). Once again, this will only evaluate the fraction of samples where the stance is correct and the graphs are structurally correct. It is a model-based metric and we release our pre-trained model [here](). Once you download the model, run the following script to get SeCA.
+Given this intermediate annotation file, we'll now compute the Semantic Correctness Accuracy for Graphs (SeCA). Once again, this will only evaluate the fraction of samples where the stance is correct and the graphs are structurally correct. It is a model-based metric and we release our pre-trained model [here](https://drive.google.com/drive/folders/1omxJhM7XG_QxBcO0cddJwld1mEvdKKDd?usp=sharing). Once you download the model, run the following script to get SeCA.
 ```
 bash eval_scripts/eval_seca
 ```
 
 ### Step 3
-In the final step, we compute the Edge Importance Accuracy (EA). This is again a model-based metric and you can download the pre-trained model [here](). Once you download the model, run the following script
+In the final step, we compute the Edge Importance Accuracy (EA). This is again a model-based metric and you can download the pre-trained model [here](https://drive.google.com/drive/folders/1gVUGZRsIefFfRgg_EbtuckP-0vwZBgI9?usp=sharing). Once you download the model, run the following script
 ```
 bash eval_scripts/eval_ea
 ```
