@@ -12,7 +12,7 @@ python structured_model/save_relation_embeddings.py
 
 # Step 2:
 
-In order to leverage commonsense knowledge from ConceptNet, next we'll fine-tune RoBERTa on ConceptNet. You can do so using the below script and the training data can be found [here](https://drive.google.com/drive/folders/19faqrwXLM5EySeB4yQ3JRPzGsi68DF07?usp=sharing). Alternatively, directly download our pre-trained model [here]().
+In order to leverage commonsense knowledge from ConceptNet, next we'll fine-tune RoBERTa on ConceptNet. You can do so using the below script and the training data can be found [here](https://drive.google.com/drive/folders/19faqrwXLM5EySeB4yQ3JRPzGsi68DF07?usp=sharing). Alternatively, directly download our pre-trained model [here](https://drive.google.com/drive/folders/14CnyJUQX8Z2rubwofDGvTLnh_3bLsjml?usp=sharing).
 
 ```
 bash model_scripts/train_conceptnet_finetuning.sh
@@ -28,7 +28,7 @@ bash model_scripts/train_structured_model.sh
 
 # Step 4:
 
-You can directly download our trained model [here]() and test it to generate the final graphs. Note that graph generation uses three predictions -- (1) internal node predictions, (2) external node predictions and (3) the edge logits. All these come together in an ILP to generate the final graphs. The below script handles all of these and will generate the graphs in ```prediction_edges_dev.lst``` inside the model folder. 
+You can directly download our trained model [here](https://drive.google.com/drive/folders/1fD0BqkigLdxXfR_tLrMnB7CTewsGx_HL?usp=sharing) and test it to generate the final graphs. Note that graph generation uses three predictions -- (1) internal node predictions, (2) external node predictions and (3) the edge logits. All these come together in an ILP to generate the final graphs. The below script handles all of these and will generate the graphs in ```prediction_edges_dev.lst``` inside the model folder. 
 
 Once you download our pre-trained model, you'll also find our generated graphs, so you can use them to directly obtain the metrics.
 
