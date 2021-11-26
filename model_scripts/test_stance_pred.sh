@@ -1,0 +1,14 @@
+python src/run_pl_stance_pred.py \
+  --model_name_or_path ./models/roberta-large-stance \
+  --task_name stance \
+  --do_eval \
+  --save_steps 10000 \
+  --data_dir ./data \
+  --max_seq_length 128 \
+  --per_device_train_batch_size 32 \
+  --learning_rate 1e-5 \
+  --num_train_epochs 10.0 \
+  --output_dir ./models/roberta-large-stance \
+  --cache_dir ./tmp \
+  --logging_steps 500 \
+  --evaluation_strategy="epoch"
