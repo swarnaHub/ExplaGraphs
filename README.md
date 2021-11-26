@@ -63,7 +63,17 @@ The predictions should be generated in a ```tsv``` file with each line containin
 For all latest results on ExplaGraphs, please refer to the leaderboard [here](https://explagraphs.github.io/).
 
 ## Baseline Models
-We are in the process of releasing our baseline models. Stay tuned!
+
+For training the stance prediction model, run the following script
+```
+bash model_scripts/train_stance_pred.sh
+```
+Note that this belongs to the rationalizing model family where the stance is predicted first and the predicted stance is conditioned on to generate the explanation graph. If you wish to work with the reasoning model family, append the generated linearized graph to the input by appropriately changing the ```src/utils_stance_pred.py``` file. 
+
+We also release the trained stance prediction model [here](https://drive.google.com/drive/folders/1THK-LxVpOY2G6VZp1bQbDlCVzynRXHGN?usp=sharing). You can test the model on the validation split by running the following script
+```
+bash model_scripts/test_stance_pred.sh
+```
 
 ### Citation
 ```
