@@ -1,0 +1,18 @@
+python structured_model/run_commonsense_finetuning.py \
+--model_type roberta_relation \
+--model_name_or_path roberta-large \
+--task_name relation \
+--do_train \
+--do_eval \
+--do_lower_case \
+--data_dir ./conceptnet_data \
+--max_seq_length 30 \
+--per_gpu_eval_batch_size 32 \
+--per_gpu_train_batch_size 32 \
+--learning_rate 1e-5 \
+--num_train_epochs 5 \
+--output_dir ./models/relation_model \
+--seed 42 \
+--data_cache_dir ./tmp \
+--cache_dir ./tmp \
+--evaluate_during_training

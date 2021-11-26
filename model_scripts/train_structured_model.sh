@@ -1,0 +1,18 @@
+python structured_model/run_joint_model.py \
+--model_type roberta_eg \
+--model_name_or_path ./models/relation_model \
+--task_name eg \
+--do_train \
+--do_eval \
+--do_lower_case \
+--data_dir ./data \
+--max_seq_length 128 \
+--per_gpu_eval_batch_size 8 \
+--per_gpu_train_batch_size 8 \
+--learning_rate 1e-5 \
+--num_train_epochs 10 \
+--output_dir ./models/sp_model \
+--seed 42 \
+--data_cache_dir ./tmp \
+--cache_dir ./tmp \
+--evaluate_during_training
