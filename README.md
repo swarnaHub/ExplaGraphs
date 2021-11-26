@@ -75,6 +75,10 @@ We also release the trained stance prediction model [here](https://drive.google.
 bash model_scripts/test_stance_pred.sh
 ```
 
+For training and testing our structured graph generation model, refer to the README inside ```structured_model```.
+
+BART and T5-based graph generation models are coming soon!
+
 ### Citation
 ```
 @inproceedings{saha2021explagraphs,
