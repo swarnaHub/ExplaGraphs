@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ## Dataset
 ExplaGraphs dataset can be found inside the ```data``` folder.
 
-It contains the training data in ```train.tsv``` and the validation samples in ```dev.tsv```.
+It contains the training data in ```train.tsv```, the validation samples in ```dev.tsv``` and the test samples (without labels) in ```test.tsv```.
 
 Each training sample contains four tab-separated entries -- belief, argument, stance label and the explanation graph.
 
@@ -56,7 +56,7 @@ This measures the importance of an edge by removing it from the predicted graph 
 
 ## Evaluating on the Test Set
 
-To evaluate your model on the test set, please email us at swarna@cs.unc.edu with your model (or a link to download it), a detailed README with the installation environment (requirements.txt) and a script to generate the predictions.
+The test samples are available inside ```data``` folder. To evaluate your model on the test set, please email us your predictions at swarna@cs.unc.edu.
 
 The predictions should be generated in a ```tsv``` file with each line containing two tab-separated entries, first the predicted stance (support/counter) followed by the predicted graph in the same bracketed format as in the train and validation files. A sample prediction file in shown inside ```data``` folder.
 
